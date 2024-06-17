@@ -1,6 +1,7 @@
 
 
-# You can write this number either like this: 11111111, or like this: 11_111_111. Python considers they are the same.
+# You can write this number either like this: 11111111, or like this: 11_111_111.
+# Python considers they are the same.
 # Note *Python 3.6 has introduced underscores in numeric literals, allowing for the placement of
 # single underscores between digits and after base specifiers for improved readability.
 # This feature is not available in older versions of Python (e.g. BEFORE 3.6).
