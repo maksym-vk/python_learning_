@@ -13,3 +13,5 @@ print(0x123) # 0x123 is a hexadecimal number with a (decimal) value equal to 291
 # It reads: three times ten to the power of eight.
 # In Python, the same effect is achieved in a slightly different way ‒ take a look: 3E8
 print(3E8)
+
+print(0.0000000000000000000001) # output: "1e-22"
