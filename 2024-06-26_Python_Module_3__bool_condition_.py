@@ -157,8 +157,10 @@ print("The largest number is:", largest_number)
 
 
 # 3.1.10   LAB   Comparison operators and conditional execution
+
 # SPATHIPHYLLUM program
 word = input("Please enter the white sail plant: ")
+
 if word == "Spathiphyllum":
     print("Yes - Spathiphyllum is the best plant ever!")
 elif word == "spathiphyllum":
@@ -169,9 +171,85 @@ else:
 
 # 3.1.11   LAB   Essentials of the if-else statement
 # Tax calculator
-
 tax_base = float(input("Please enter the citizen's income here: "))
+
 if tax_base > 85528:
-    tax = 14839,2 + (0,32*(tax_base - 85528))
-    tax = round(tax, 0)
-    print("Your tax is: ", tax)
+    tax = 14839.2 + (0.32*(tax_base - 85528))
+else:
+    tax = (tax_base * 0.18) - 556.2
+
+tax = round(tax, 0)
+
+if tax > 0:
+    print("Your tax is:", tax, "thalers.") # 3092.78 minimum
+else:
+    print("The tax is: 0.0 thalers. You don't have to pay a tax!") #3092.77 or less
+
+# Alternative version
+income = float(input("Enter the annual income: "))
+
+if income < 85528:
+    tax = income * 0.18 - 556.02
+else:
+    tax = (income - 85528) * 0.32 + 14839.02
+
+if tax < 0.0:
+    tax = 0.0
+
+tax = round(tax, 0)
+print("The tax is:", tax, "thalers")
+
+
+# 3.1.12   LAB   Essentials of the if-elif-else statement
+# My solution.
+year = int(input("Enter a year: "))
+
+if year < 1582:
+    print("Not within the Gregorian calendar period.")
+else:
+# Write the if-elif-elif-else block here.
+    if (year % 4) != 0:
+        print("It is a common year.")
+    elif (year % 100) != 0:
+        print("It is a leap year.")
+    elif (year % 400) != 0:
+        print("It is a common year.")
+    else:
+        print("It is a leap year.")
+
+
+# Proposed solution
+year = int(input("Enter a year: "))
+
+if year < 1582:
+    print("Not within the Gregorian calendar period")
+else:
+    if year % 4 != 0:
+        print("Common year")
+    elif year % 100 != 0:
+        print("Leap year")
+    elif year % 400 != 0:
+        print("Common year")
+    else:
+        print("Leap year")
+
+
+x, y, z = 5, 10, 8
+x, y, z = z, y, x
+print(x, y, z)
+
+x = "1"
+
+if x == 1:
+    print("one")
+elif x == "1":
+    if int(x) > 1:
+        print("two")
+    elif int(x) < 1:
+        print("three")
+    else:
+        print("four")
+if int(x) == 1:
+    print("five")
+else:
+    print("six")
