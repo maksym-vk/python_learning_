@@ -19,3 +19,5 @@ print("Hello Python!")
 # They are called keywords or (more precisely) reserved keywords.
 # They are reserved because you mustn't use them as names: neither for your variables,
 # nor functions, nor any other named entities you want to create.
+
+print(1 == True)
