@@ -1,3 +1,47 @@
+# 5.36, 5.37 (Функції, Будова функції)
+def result(total, correct):
+    if 0.8 <= correct/total <= 1:
+        status = True
+    else:
+        status = False
+    return status
+
+a = int(input("Enter the number of questions: "))
+b = int(input("Enter the number of correct answers: "))
+x = result(a, b)
+print(x)
+
+ans_passed = "Passed"
+ans_failed = "Failed"
+
+if x == True:
+    print(ans_passed)
+else:
+    print(ans_failed)
+
+
+num_1 = int(input("Enter the first number: "))
+num_2 = int(input("Enter the second number: "))
+def select_function(a, b):
+    if a >= 0:
+        return a
+    else:
+        return b
+
+x = select_function(num_1, num_2)
+
+print(x)
+
+
+input("Please hit enter to continue.")
+def greeting(name="username"): #the default ARGUMENT of the function is added
+    message = "Nice to see you, "+name+"!"
+    return message
+#name = input("Enter the username: ")
+text = greeting()
+print(text)
+
+
 '''
 
 count(x) -

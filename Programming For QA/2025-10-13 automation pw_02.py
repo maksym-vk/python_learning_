@@ -7,5 +7,7 @@ with sync_playwright() as p:
     page=browser.new_page() #відкриваємо нове вікно браузера
     page.goto("https://google.com")
     print("Title:", page.title()) #виводимо у консолі текст елемента <title>
+    # ⌨️ Скрипт зупиниться тут і чекатиме натискання Enter у консолі
+    # input("Натисніть Enter, щоб закрити браузер...")
     browser.close() #закриваємо браузер
 
